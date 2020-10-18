@@ -1,0 +1,72 @@
+.layer1{
+	position: absolute;
+	width: 100%;
+}
+
+.layer2{
+	position: absolute;
+	width: 100%;
+}
+
+.layer3{
+	position: absolute;
+
+	width: 100%;
+}
+
+.layer4{
+	position: absolute;
+	width: 410px;
+	animation-duration: 3s;
+    animation-name: dissapear;
+}
+
+.layer5{
+	position: absolute;
+	width: 157px;
+
+	transition-duration: 3s;
+	transition-timing-function: inherit;
+	opacity: 100%
+}
+
+.layer6{
+	position: absolute;
+	width: 100px;
+
+	animation:slide-in;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+
+	transition-duration: 3s;
+	transition-timing-function: cubic-bezier(0.1,-2.0,0.8,1);
+	opacity: 100%
+}
+
+.layer6:hover {
+	opacity: 0%;
+}
+
+.layer5:hover{
+	opacity: 0%
+}
+
+@keyframes dissapear {
+  0% {
+       opacity: 0%;
+  }
+
+  100% {
+       opacity: 100%
+  }
+}
+
+@keyframes slide-in{
+	0%{
+		margin-left: 0%; transform: rotate(10deg);
+	}
+
+	100%{
+		margin-left: 40%; transform: rotate(0deg);
+	}
+}
